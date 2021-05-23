@@ -1,10 +1,10 @@
 <?php
 
 	class DAO {
-		private static $dbHost = "localhost";
-		private static $dbName = "blobshop";
-		private static $dbUser = "admin";
-		private static $dbPass = "admin";
+    private static $dbHost = getenv('DB_HOST');
+    private static $dbName = getenv('DB_DB');
+    private static $dbUser = getenv('DB_USER');
+    private static $dbPass = getenv('DB_PASS');
 		private static $sharedPDO;
 		protected $pdo;
 
