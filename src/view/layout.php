@@ -13,7 +13,7 @@
 
 <body class="body">
 
-    
+
     <div class="scrolltotop">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12"/></svg>
     </div>
@@ -38,7 +38,7 @@
             <svg class="footer__art--svg" width="314" height="308" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M168.274 10.929c39.487 4.857 78.967 11.727 105.723 41.308 29.054 32.123 45.896 75.009 38.101 117.704-8.189 44.849-39.234 80.472-78.467 103.384-44.13 25.772-96.722 47.252-143.21 26.076-47.336-21.563-65.694-75.959-77.796-126.748-12.32-51.701-25.2-112.928 11.58-151.143C59.424-15.082 117.99 4.743 168.275 10.929z" fill="#E6C22C"/></svg>
         </div>
         <div class="newsletter">
-        
+
             <p class="newsletter__title">A newsletter about all kinds of blobs that spark joy</p>
             <p class="newsletter__subtitle">Our goal with this newsletter is to create helpful content for blob enthousiasts, and this newsletter is the best in this!</p>
             <form class="newsletter__form" action="index.php" method="post" id="newsletter">
@@ -48,10 +48,10 @@
             </form>
         </div>
     </footer>
-    
+
     <p class="credits <?php if($page === 'Sign In') echo 'hidden' ?>">Developed by @jaspervermeulen | Websited based on <a href="https://mishmash.pt">https://mishmash.pt</a></p>
 
-    <script src="js/script.js"></script>
+    <script src="js/index.js"></script>
     <!-- <script type="text/javascript" src="js/validate.js"></script> -->
 </body>
 
