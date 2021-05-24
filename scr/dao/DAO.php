@@ -1,16 +1,19 @@
 <?php
 
 	class DAO {
-    private static $dbHost = getenv('DB_HOST');
-    private static $dbName = getenv('DB_DB');
-    private static $dbUser = getenv('DB_USER');
-    private static $dbPass = getenv('DB_PASS');
+		
 		private static $sharedPDO;
 		protected $pdo;
 
 		function __construct() {
 			if(empty(self::$sharedPDO)) {
-				self::$sharedPDO = new PDO("mysql:host=" . self::$dbHost . ";dbname=" . self::$dbName, self::$dbUser, self::$dbPass);
+
+				$dbHost = getenv('PHP_DB_HOST') ?: "localhost";
+				$dbName = getenv('PHP_DB_DATABASE') ?: "blobshop";
+				$dbUser = getenv('PHP_DB_USERNAME') ?: "admin";
+				$dbPass = getenv('PHP_DB_PASSWORD') ?: "admin";
+
+				self::$sharedPDO = new PDO("mysql:host=" . $dbHost . ";dbname=" . $dbName, $dbUser, $dbPass);
 				self::$sharedPDO->exec("SET CHARACTER SET utf8");
 				self::$sharedPDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 				self::$sharedPDO->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);

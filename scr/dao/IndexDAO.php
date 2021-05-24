@@ -11,15 +11,7 @@ class IndexDAO extends DAO {
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
   }
 
-  public function selectById($id){
-    $sql = "SELECT * FROM `______` WHERE `id` = :id";
-    $stmt = $this->pdo->prepare($sql);
-    $stmt->bindValue(':id', $id);
-    $stmt->execute();
-    return $stmt->fetch(PDO::FETCH_ASSOC);
-  }
-
-  public function insertNewletter($data){
+  public function insertNewsletter($data){
     $sql = "INSERT INTO `newsletter`(`email`) VALUES (:email)";
     $stmt = $this->pdo->prepare($sql);
     $stmt->bindValue(':email', $data['email']);
