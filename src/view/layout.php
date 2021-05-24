@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <?php echo $css;?>
 
     <title>BlobShop: <?php echo $page ?></title>
 </head>
@@ -51,8 +50,7 @@
 
     <p class="credits <?php if($page === 'Sign In') echo 'hidden' ?>">Developed by @jaspervermeulen | Websited based on <a href="https://mishmash.pt">https://mishmash.pt</a></p>
 
-    <script src="../index.js"></script>
-    <!-- <script type="text/javascript" src="js/validate.js"></script> -->
+      <?php echo $js; ?>
 </body>
 
 </html>
