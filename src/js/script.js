@@ -1,3 +1,5 @@
+require('./css/reset.css');
+require('./css/style.css');
 {
   const init = () => {
     const ctaButton = document.querySelector('.info__cta--btn');
@@ -23,8 +25,8 @@
 
   const handleScrollTopClick = () => {
     window.scroll({
-      top: 0, 
-      left: 0, 
+      top: 0,
+      left: 0,
       behavior: 'smooth'
     });
   }
@@ -36,8 +38,8 @@
   const handleCtaButtonClick = e => {
     e.preventDefault();
     window.scroll({
-      top: 600, 
-      left: 0, 
+      top: 600,
+      left: 0,
       behavior: 'smooth'
     });
   }
