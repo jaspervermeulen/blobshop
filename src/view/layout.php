@@ -51,7 +51,7 @@
 
     <p class="credits <?php if($page === 'Sign In') echo 'hidden' ?>">Developed by @jaspervermeulen | Websited based on <a href="https://mishmash.pt">https://mishmash.pt</a></p>
 
-    <script src="js/index.js"></script>
+    <script src="../index.js"></script>
     <!-- <script type="text/javascript" src="js/validate.js"></script> -->
 </body>
 
