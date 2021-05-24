@@ -13,6 +13,7 @@ module.exports = (env, {mode}) => {
       overlay: true,
       hot: true
     },
+    entry : "./src/js/script.js",
     module: {
       rules: [
         {
