@@ -13,7 +13,6 @@ module.exports = (env, {mode}) => {
       overlay: true,
       hot: true
     },
-    entry : "./src/js/script.js",
     module: {
       rules: [
         {
@@ -53,7 +52,11 @@ module.exports = (env, {mode}) => {
               }
             }
           ]
-        }
+        },
+        {
+          test: /\.(woff|woff2|ttf|eot)$/,
+          use: 'file-loader?name=fonts/[name].[ext]!static'
+         }
       ]
     },
     plugins: [

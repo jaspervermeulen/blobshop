@@ -1,75 +1,48 @@
-/************************************************************
-
-table of contents
-* font faces
-* general config
-* header
-* banner
-* products
-* footer
-* credits
-
-************************************************************/
-
-
-
-/************************************************************
-
-* font faces
-
-************************************************************/
+@import './css/reset.css';
 
 @font-face {
   font-family: 'Airbnb Cereal App Book';
   font-style: normal;
   font-weight: normal;
-  src: url('../assets/fonts/AirbnbCerealBook.woff') format('woff');
+  src: url('./assets/fonts/AirbnbCerealBook.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Airbnb Cereal App Light';
   font-style: normal;
   font-weight: normal;
-  src: url('../assets/fonts/AirbnbCerealLight.woff') format('woff');
+  src: url('./assets/fonts/AirbnbCerealLight.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Airbnb Cereal App Medium';
   font-style: normal;
   font-weight: normal;
-  src: url('../assets/fonts/AirbnbCerealMedium.woff') format('woff');
+  src: url('./assets/fonts/AirbnbCerealMedium.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Airbnb Cereal App Bold';
   font-style: normal;
   font-weight: normal;
-  src: url('../assets/fonts/AirbnbCerealBold.woff') format('woff');
+  src: url('./assets/fonts/AirbnbCerealBold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Airbnb Cereal App Extra Bold';
   font-style: normal;
   font-weight: normal;
-  src: url('../assets/fonts/AirbnbCerealExtraBold.woff') format('woff');
+  src: url('./assets/fonts/AirbnbCerealExtraBold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Airbnb Cereal App Black';
   font-style: normal;
   font-weight: normal;
-  src: url('../assets/fonts/AirbnbCerealBlack.woff') format('woff');
+  src: url('./assets/fonts/AirbnbCerealBlack.woff') format('woff');
 }
 
 
-
-
-
-/************************************************************
-
-general config
-
-************************************************************/
 
 *,
 ::after,
@@ -96,14 +69,6 @@ html {
 
 
 
-
-
-
-/************************************************************
-
-header
-
-************************************************************/
 
 .header {
   margin: 4rem 2rem;
@@ -138,13 +103,6 @@ header
 
 
 
-
-
-/************************************************************
-
-banner
-
-************************************************************/
 
 .banner{
   margin: 4rem 2rem 7.2rem 2rem;
@@ -248,13 +206,6 @@ banner
 
 
 
-
-/************************************************************
-
-products
-
-************************************************************/
-
 .products{
   margin: 0 2rem;
   display: grid;
@@ -333,14 +284,6 @@ products
 }
 
 
-
-
-
-/************************************************************
-
-footer
-
-************************************************************/
 
 .footer{
   margin: 3.2rem 2rem 0 2rem;
@@ -424,7 +367,7 @@ footer
 .newsletter__form--submit{
   height: 4.9rem;
   width: 6.8rem;
-  background-color: #20B6E4; 
+  background-color: #20B6E4;
   border: none;
   font-size: 1.6rem;
   font-family: 'Airbnb Cereal App Medium';
@@ -461,15 +404,6 @@ footer
 }
 
 
-
-
-
-/************************************************************
-
-credits
-
-************************************************************/
-
 .credits{
   font-size: 1.6rem;
   margin: 6.4rem 2rem 6.4rem 2rem;
@@ -477,13 +411,6 @@ credits
 }
 
 
-
-
-/************************************************************
-
-about
-
-************************************************************/
 
 .about{
   margin: 0 2rem;
