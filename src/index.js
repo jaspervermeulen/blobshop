@@ -1,4 +1,4 @@
-// require('./style.css');
+require('./style.css');
 {
   const init = () => {
     const ctaButton = document.querySelector('.info__cta--btn');

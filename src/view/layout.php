@@ -13,11 +13,11 @@
   <meta name="msapplication-TileColor" content="#00aba9">
   <meta name="theme-color" content="#ffffff">
 
-    <!-- <?php echo $css;?> -->
+    <?php echo $css;?>
 
     <!-- LOCAL DEVELOPMENT -->
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <!-- <link rel="stylesheet" href="./style.css"> -->
 
     <title>BlobShop <?php echo $page ?></title>
 </head>
@@ -62,10 +62,10 @@
 
     <p class="credits <?php if($page === 'Sign In') echo 'hidden' ?>">Developed by @jaspervermeulen | Websited based on <a href="https://mishmash.pt">https://mishmash.pt</a></p>
 
-    <!-- <?php echo $js; ?> -->
+    <?php echo $js; ?>
 
     <!-- LOCAL DEVELOPMENT -->
-    <script src="./index.js"></script>
+    <!-- <script src="./index.js"></script> -->
 </body>
 
 </html>
