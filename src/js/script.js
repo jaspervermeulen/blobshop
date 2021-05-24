@@ -1,5 +1,5 @@
-require('./css/reset.css');
-require('./css/style.css');
+require('../css/reset.css');
+require('../css/style.css');
 {
   const init = () => {
     const ctaButton = document.querySelector('.info__cta--btn');
