@@ -19,7 +19,7 @@ class PagesController extends Controller {
       }
     }
 
-    $this->set('page', 'Shop');
+    $this->set('page', '');
     $this->set('products', $this->IndexDAO->selectAll());
   }
 
